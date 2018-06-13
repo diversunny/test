@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\jsource\ejb-test-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3786398802.index
+2009819891.index
+1194275998.index
+2300127901.index
+2154630519.index
+2524219518.index
