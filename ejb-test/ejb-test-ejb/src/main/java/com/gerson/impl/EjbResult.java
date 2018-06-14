@@ -6,17 +6,17 @@ import java.util.List;
 import com.gerson.IResult;
 import com.gerson.IResultRow;
 
-public class Result implements IResult,Serializable {
+public class EjbResult implements IResult,Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	private List<IResultRow> result;
-	public Result() {
+	public EjbResult() {
 		
 	}
-	public Result(List<IResultRow> hellowList) {
+	public EjbResult(List<IResultRow> hellowList) {
 		this();
 		this.result=hellowList;
 	}

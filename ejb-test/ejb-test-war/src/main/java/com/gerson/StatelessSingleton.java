@@ -77,8 +77,8 @@ public class StatelessSingleton {
 		
 		
 	}
-//	@Produces
-//	public static IRemoteService getService() throws NamingException {
-//		return InitialContext.doLookup("java:global/ejb-test-ear-0.0.1-SNAPSHOT/ejb-test-ejb-0.0.1-SNAPSHOT/Service!com.gerson.IRemoteService");
-//	}
+	@Produces
+	public static IRemoteService getService() throws NamingException {		
+		return InitialContext.doLookup("java:global/ejb-test/test-ejb/Service!com.gerson.IRemoteService");
+	}
 }

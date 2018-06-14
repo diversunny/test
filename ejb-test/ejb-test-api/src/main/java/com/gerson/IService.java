@@ -9,5 +9,5 @@ public interface IService {
 	public List<IResultRow> getHellowList();
 	public List<IResultRow> getHelloApiList();
 	public IResult getHellowResult();
-	public ApiResult getApiResult();
+	public IResult getApiResult();
 }

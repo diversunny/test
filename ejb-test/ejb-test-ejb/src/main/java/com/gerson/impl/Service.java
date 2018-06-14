@@ -30,7 +30,7 @@ public class Service implements IService,IRemoteService {
 		String[] words=getHelloArr();
 		List<IResultRow>resultList=new ArrayList<IResultRow>();
 		for(String word:words) {
-			ResultRow row=new ResultRow(word);
+			EjbResultRow row=new EjbResultRow(word);
 			resultList.add(row);
 		}
 		return resultList;
@@ -48,19 +48,12 @@ public class Service implements IService,IRemoteService {
 
 
 	public IResult getHellowResult() {
-		return new Result(getHellowList());
+		return new EjbResult(getHellowList());
 	}
 
 	@Override
-	public ApiResult getApiResult() {
-		String[] words=getHelloArr();
-		List<IResultRow>resultList=new ArrayList<IResultRow>();
-		for(String word:words) {
-			IResultRow row=new ApiResultRow(word);
-			resultList.add(row);
-		}
-		
-		return new ApiResult(resultList);
+	public IResult getApiResult() {		
+		return new ApiResult(getHelloApiList());
 	}
 
 	
