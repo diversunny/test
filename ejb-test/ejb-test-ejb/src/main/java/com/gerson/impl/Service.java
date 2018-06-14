@@ -35,6 +35,17 @@ public class Service implements IService,IRemoteService {
 		}
 		return resultList;
 	}
+	@Override
+	public List<IResultRow> getHelloApiList() {
+		String[] words=getHelloArr();
+		List<IResultRow>resultList=new ArrayList<IResultRow>();
+		for(String word:words) {
+			ApiResultRow row=new ApiResultRow(word);
+			resultList.add(row);
+		}
+		return resultList;
+	}
+
 
 	public IResult getHellowResult() {
 		return new Result(getHellowList());
@@ -52,4 +63,5 @@ public class Service implements IService,IRemoteService {
 		return new ApiResult(resultList);
 	}
 
+	
 }
