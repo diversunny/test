@@ -14,5 +14,27 @@
 	  	<version>${project.version}</version>
 	  	<scope>compile</scope>
   </dependency>
+   <dependency>
+	  	<groupId>${project.groupId}</groupId>
+	  	<artifactId>i18n</artifactId>
+	  	<version>${project.version}</version>
+	  	<scope>provided</scope>
+  </dependency>
   </dependencies>
+  
+  
+<build>
+   
+   <plugins>
+     <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-war-plugin</artifactId>
+       <configuration>
+          <archive>
+            
+          </archive>
+       </configuration>
+     </plugin>
+   </plugins>
+</build>
 </project>
