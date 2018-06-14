@@ -24,7 +24,8 @@
   	<module>ejb-test-ejb</module>
   	<module>ejb-test-war</module>
   	<module>ejb-test-ear</module>
-  </modules>
+  	<module>i18n</module>
+</modules>
   <build>
    
     <plugins>
